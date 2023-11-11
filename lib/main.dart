@@ -10,9 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      // Remove the debug banner
       debugShowCheckedModeBanner: false,
-      title: 'DBestech',
+      title: 'Getx',
       theme: ThemeData(primarySwatch: Colors.deepOrange),
       home: HomePage(),
     );

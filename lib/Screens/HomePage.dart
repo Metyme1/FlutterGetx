@@ -1,6 +1,10 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+
+import 'PageOne.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -59,7 +63,7 @@ class HomePage extends StatelessWidget {
                   text: TextSpan(
                       text: 'First GetX',
                       recognizer: TapGestureRecognizer()
-                        ..onTap = ()=> null,
+                        ..onTap = ()=> Get.to(()=>PageOne()),
                       style: TextStyle(
                           color: Colors.grey.shade600,
                           fontSize: 30
