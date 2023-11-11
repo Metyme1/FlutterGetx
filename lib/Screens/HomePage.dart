@@ -128,7 +128,10 @@ class HomePage extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),),
-                          onPressed: () => null,
+                          onPressed: () => Get.toNamed('/course-page',
+                          arguments: {
+                            'price':Random().nextInt(10000).toString()
+                          },),
                           child: Text(
                             "Course",
                             style: TextStyle(
@@ -157,7 +160,7 @@ class HomePage extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),),
-                              onPressed: () => null,
+                              onPressed: () => Get.toNamed('/more/${Random().nextInt(100)}'),
                               child: Text(
                                 "More",
                                 style: TextStyle(

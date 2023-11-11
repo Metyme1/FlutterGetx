@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class PageFour extends StatelessWidget {
   @override
@@ -26,7 +28,7 @@ class PageFour extends StatelessWidget {
               ),
               onPressed: () => null,
               child: Text(
-                "Go to another page",
+                "Passed Value is"+Get.parameters['data']!,
                 style: TextStyle(fontSize: 40, color:Colors.grey),
               ),
             ),

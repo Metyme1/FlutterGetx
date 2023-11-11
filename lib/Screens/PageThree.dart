@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class PageThree extends StatelessWidget {
   @override
@@ -18,7 +20,7 @@ class PageThree extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Course price is USD ",
+          "Course price is USD "+Get.arguments['price']??'0',
           style: TextStyle(fontSize: 30, color:Colors.grey.shade600),
         ),
       ),
