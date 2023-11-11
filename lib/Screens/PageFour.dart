@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import 'PageFive.dart';
+
 class PageFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -26,15 +28,15 @@ class PageFour extends StatelessWidget {
                 elevation: 0,
                 primary: Colors.transparent,
               ),
-              onPressed: () => null,
+              onPressed: () => Get.to(()=>PageFive()),
               child: Text(
-                "Passed Value is"+Get.parameters['data']!,
+                "Click here",
                 style: TextStyle(fontSize: 40, color:Colors.grey),
               ),
             ),
             Divider(),
             Text(
-              'Page Four',
+              'Page Four'+Get.parameters['data']!,
               style: TextStyle(fontSize: 30),
             ),
           ],

@@ -1,10 +1,18 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:getx/Screens/HomePage.dart';
 
 class PageFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'page five'
+        ),
+      ),
       body: Center(
           child:Container(
             width: 200,
@@ -23,7 +31,8 @@ class PageFive extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                 ),),
-              onPressed: () => null,
+            //  onPressed: () =>Get.back(),
+              onPressed: ()=> Get.to(()=>HomePage()),
               child: Text(
                 "Home",
                 style: TextStyle(

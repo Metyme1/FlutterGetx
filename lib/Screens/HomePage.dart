@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                       bottomRight: Radius.circular(40),
                     ),
                     gradient: LinearGradient(
-                      colors: [Colors.teal, Colors.teal.shade50, Colors.teal.shade500],
+                      colors: [Colors.teal, Colors.teal, Colors.teal],
                     )
                 ),
 
@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
                     topLeft: Radius.circular(50),
                   ),
                   gradient:LinearGradient(
-                    colors: [Colors.teal, Colors.teal.shade50, Colors.teal.shade500],
+                    colors: [Colors.teal, Colors.teal, Colors.teal],
                   ),
                 ),
                 child: Container(
