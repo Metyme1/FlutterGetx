@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:getx/Screens/HomePage.dart';
 
 class PageOne extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class PageOne extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),),
-            onPressed: () => Get.back(),
+            onPressed: () => Get.off(()=>HomePage()),
             child: Text(
               "Home",
               style: TextStyle(

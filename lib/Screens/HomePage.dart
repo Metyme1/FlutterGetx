@@ -1,8 +1,11 @@
 
+import 'dart:math';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:getx/Screens/PageTwo.dart';
 
 import 'PageOne.dart';
 
@@ -21,7 +24,7 @@ class HomePage extends StatelessWidget {
                       bottomRight: Radius.circular(40),
                     ),
                     gradient: LinearGradient(
-                      colors: [Colors.grey.shade900, Colors.grey.shade600, Colors.grey.shade900],
+                      colors: [Colors.teal, Colors.teal.shade50, Colors.teal.shade500],
                     )
                 ),
 
@@ -75,7 +78,13 @@ class HomePage extends StatelessWidget {
                   text:TextSpan(
                       text: 'Explore GetX',
                       recognizer: TapGestureRecognizer()
-                        ..onTap = ()=> null,
+                        ..onTap = ()=> Get.to(
+                                ()=>PageTwo(),
+                                arguments: {
+                                  'price':Random().nextInt(1000).toString(),
+                                  'Text':'hello',
+                                }
+                        ),
                       style: TextStyle(
                           color: Colors.grey.shade600,
                           fontSize: 30
@@ -99,7 +108,7 @@ class HomePage extends StatelessWidget {
                     topLeft: Radius.circular(50),
                   ),
                   gradient:LinearGradient(
-                      colors:[Colors.grey, Colors.black, Colors.grey]
+                    colors: [Colors.teal, Colors.teal.shade50, Colors.teal.shade500],
                   ),
                 ),
                 child: Container(

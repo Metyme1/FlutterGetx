@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/Screens/PageThree.dart';
 import 'Screens/HomePage.dart';
 
 void main() {
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Getx',
       theme: ThemeData(primarySwatch: Colors.deepOrange),
       home: HomePage(),
+      getPages: [
+        GetPage(name:'/course-page',page:()=>PageThree())
+      ],
     );
   }
 }
